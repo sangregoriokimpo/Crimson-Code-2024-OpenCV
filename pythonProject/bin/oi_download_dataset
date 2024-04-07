@@ -1,0 +1,8 @@
+#!/Users/gregoryjabido/Desktop/opencv_project/pythonProject/bin/python3.11
+# -*- coding: utf-8 -*-
+import re
+import sys
+from openimages.download import _entrypoint_download_dataset
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(_entrypoint_download_dataset())
